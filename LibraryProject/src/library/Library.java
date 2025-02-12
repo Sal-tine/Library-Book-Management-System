@@ -46,7 +46,7 @@ public class Library {
 	
 	/** Prints every book in the Books array */
 	public void displayBooks() {
-		for(int i = 0; i <= Count; i++) {
+		for(int i = 0; i < Count; i++) {
 			System.out.println(Books[i].toString()); // Prints the books
 		}
 	}
