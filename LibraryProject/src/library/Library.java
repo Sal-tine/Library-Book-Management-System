@@ -35,7 +35,7 @@ public class Library {
 	
 	/** Searches for the book in the Books array through the ISBN */
 	public Book searchByISBN(String ISBN) {
-		for(int i = 0; i <= Count; i++) {
+		for(int i = 0; i < Count; i++) {
 			if (Books[i].getISBN().equals(ISBN)) { // The getISBN and equals commands from the book class comparing the books
                 return Books[i];
             }

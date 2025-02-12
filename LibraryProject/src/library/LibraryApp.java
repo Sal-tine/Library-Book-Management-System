@@ -60,5 +60,14 @@ public class LibraryApp {
          */
         System.out.println("\nTrying to remove a non-existing book:");
         library.removeBook(book2); // This should print a message or do nothing.
+        
+        
+        System.out.println("Searching for book wiht ISBN: 978-0201633610");
+        Book foundBook2 = library.searchByISBN("978-0201633610");
+        if (foundBook2 != null) {
+        	System.out.println("Book found: " + foundBook);
+        } else {
+        	System.out.println("Book no found.");
+        }
 	}
 }
